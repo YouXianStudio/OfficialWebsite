@@ -1,0 +1,28 @@
+#Footer{
+    width: 100vw;
+    height: 300px;
+    background-color: #94070a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 4px solid white;
+}
+#Footer>a{
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+    font-family: 'SHUJIANTI';
+    text-decoration: none;
+}
+#Footer>div:nth-of-type(1){
+    margin-top: 20px!important;
+}
+#Footer>div{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+#Footer>h5{
+    margin-top: 40px;
+    color: #dad2d2;
+}

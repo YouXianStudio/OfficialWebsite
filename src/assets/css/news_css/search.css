@@ -1,0 +1,232 @@
+.search{
+    background-color: white;
+}
+.searchbox{
+    width: 900px;
+    height: 40px;
+    border: 1px solid #a50707;
+    margin: 10px auto 0 auto;
+    display: flex;
+}
+.search>.title{
+    margin: 30px auto 0 auto;
+    width: 1000px;
+    height: 70px;
+    background-color: #efebea;
+}
+.search>.title a{
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    text-indent: 1em;
+}
+.searchbox input{
+    width: 94%;
+    height: 100%;
+    border: none;
+    background-color: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-indent: .5em;
+}
+.searchbox div{
+    margin-left: 1%;
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box  ;
+    align-items: center;
+    cursor: pointer;
+}
+.searchbox div img{
+    width: 50%;
+    height: 50%;
+}
+.nothing{
+    margin:30px auto 0 auto;
+    width: 1100px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.08), 0 3px 6px 0 rgba(0, 0, 0, 0.06), 0 5px 12px 4px rgba(0, 0, 0, 0.04);
+}
+.nothing a{
+    font-size: 20px;
+    color: #a50707
+}
+.news{
+    width: 1200px;
+    padding-bottom: 70px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.08), 0 3px 6px 0 rgba(0, 0, 0, 0.06), 0 5px 12px 4px rgba(0, 0, 0, 0.04);
+}
+.newbox{
+    width: 1100px;
+    height: 230px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #efebea;
+    display: flex;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    border-radius: 0 20px 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+.newbox:hover{
+    z-index: 55;
+}
+.newbox:hover::before{
+    width: 104%;
+    height: 100%;
+    left: -2%;
+    top: 0%;
+    content: '';
+    box-shadow: 3px 35px 77px -17px rgba(139, 0, 18, 0.5);
+}
+.newbox:hover .time .day{
+    color: white;
+}
+.newbox:hover .time {
+    border-color: white;
+    color: white;
+}
+.newbox::before{
+    content: '';
+    background-color: #94070a;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 0;
+    left: 0%;
+    top: 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0 15px 0 15px;
+}
+.newbox:hover::after{
+    content: '';
+    width: 104%;
+    height: 100%;
+    background: url(../../svg/meigui.svg) no-repeat bottom right;
+    overflow: hidden;
+    position: absolute;
+    left: -2%;
+    top: 0;
+    z-index: 6;
+}
+.newbox:hover .goin {
+    border: 2px solid white!important;
+}
+.newbox:hover .content{
+    color: white;
+}
+.newbox .time{
+    width: 150px;
+    border-top: 4PX SOLID #a50707;
+    position: relative;
+    height: 95%;
+    z-index: 7;
+    transition: all .5S;
+    margin-top: 3%;
+    margin-left: 10px;
+}
+.newbox> .img{
+    width: 330px;
+    margin: 40px 40px;
+    z-index: 7;
+}
+.newbox .time>a{
+    position: absolute;
+    font-size: 17px;
+    z-index: 7;
+}
+.newbox .time .year{
+    left: 20px;
+    top: 30px;
+    z-index: 7;
+}
+.newbox .time .month{
+    left: 50px;
+    top: 30px;
+    z-index: 7;
+}
+.newbox .time .day{
+    left: 80px;
+    top: 10px;
+    color: #a50707;
+    font-size: 40px;
+    z-index: 7;
+    transition: all .5S;
+}
+.newbox .time .goin{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 2px solid #bfbfbf;
+    bottom: 45px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 7;
+}
+.newbox .time .goin img{
+    width: 45%;
+    height: 45%;
+    position: relative;
+    right: 1px;
+}
+.newbox .content{
+    width: 500px;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+    z-index: 7;
+    transition: all .5s;
+}
+.newbox>img{
+    width: 330px;
+    height: 190px;
+    margin-left: 50px;
+}
+.newbox .content .title{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.newbox .content .text{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+.reset{
+    color: rgb(73, 4, 4);
+}
+.reset:hover{
+    color: red;
+    cursor: pointer;
+}

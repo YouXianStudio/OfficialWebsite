@@ -1,0 +1,47 @@
+.detail{
+    width: 100vw;
+    height: 100vh;
+    background-color: #efebea;
+    overflow-y: scroll;
+}
+.detail::-webkit-scrollbar{
+    width: 8px;
+    height: 6px;
+    opacity: 0;
+}
+.detail::-webkit-scrollbar-thumb{
+    width: 6px;
+    height: 6px;
+    background-color: rgba(201, 195, 195,.8);
+    border-radius: 20px;
+}
+.title{
+    margin: 70px auto 0 auto;
+    width: 600px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.time{
+    margin: 10px auto 0 auto;
+    width: 800px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #7f7f7f;
+}
+.content{
+    margin: 30px auto 0 auto;
+    width: 850px;
+    font-size: 18px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+.img{
+    width: 550px;
+    margin: 50px auto 0 auto;
+}
+.img img{
+    width: 100%;
+}
